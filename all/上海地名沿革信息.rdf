@@ -1,0 +1,316 @@
+@prefix dynastyn: <http://geocode.org/Dynasty/> .
+@prefix eventn: <http://geocode.org/Event/> .
+@prefix nsn: <http://geocode.org/NS/> .
+
+nsn:上海县和闵行区 nsn:changefrom eventn:撤消-设立24 ;
+    nsn:fid "nsfid_41" .
+
+nsn:上海市人民政府 nsn:changefrom eventn:废17,
+        eventn:成立于1,
+        eventn:辖2,
+        eventn:辖3 ;
+    nsn:fid "nsfid_2" .
+
+nsn:上海特别市 nsn:changefrom eventn:成立于0 ;
+    nsn:fid "nsfid_0" .
+
+nsn:北四川路区 nsn:changefrom eventn:入7 ;
+    nsn:fid "nsfid_12" .
+
+nsn:北站区 nsn:changefrom eventn:入8 ;
+    nsn:fid "nsfid_14" .
+
+nsn:南汇区 nsn:changefrom eventn:撤消-并入28 ;
+    nsn:fid "nsfid_48" .
+
+nsn:南通专区的崇明县 nsn:changefrom eventn:归入20 ;
+    nsn:fid "nsfid_36" .
+
+<http://geocode.org/NS/吴淞、江湾、大场3区> nsn:changefrom eventn:合并为15 ;
+    nsn:fid "nsfid_28" .
+
+nsn:嘉定县 nsn:changefrom eventn:撤消-设立26 ;
+    nsn:fid "nsfid_45" .
+
+nsn:宝山县与吴淞区 nsn:changefrom eventn:撤消-设立23 ;
+    nsn:fid "nsfid_39" .
+
+nsn:嵩山区的北部 nsn:changefrom eventn:入12 ;
+    nsn:fid "nsfid_22" .
+
+nsn:嵩山区的南部 nsn:changefrom eventn:入13 ;
+    nsn:fid "nsfid_24" .
+
+nsn:川沙县 nsn:changefrom eventn:撤消-设立25 ;
+    nsn:fid "nsfid_43" .
+
+nsn:常熟区 nsn:changefrom eventn:入9 ;
+    nsn:fid "nsfid_16" .
+
+<http://geocode.org/NS/江湾、新市2区> nsn:changefrom eventn:合并为5 ;
+    nsn:fid "nsfid_8" .
+
+<http://geocode.org/NS/江苏松江专区的上海、宝山、嘉定3县> nsn:changefrom eventn:改属18 ;
+    nsn:fid "nsfid_33" .
+
+nsn:洋泾区 nsn:changefrom eventn:分为4 ;
+    nsn:fid "nsfid_6" .
+
+<http://geocode.org/NS/浙江舟山县（现舟山市）嵊泗人民公社> nsn:changefrom eventn:划入21,
+        eventn:复归22 ;
+    nsn:fid "nsfid_37" .
+
+<http://geocode.org/NS/真如、新泾、龙华3区> nsn:changefrom eventn:合并为16 ;
+    nsn:fid "nsfid_30" .
+
+nsn:老闸区 nsn:changefrom eventn:入6 ;
+    nsn:fid "nsfid_10" .
+
+<http://geocode.org/NS/苏州专区的松江、川沙、南汇、奉贤、金山、青浦6县> nsn:changefrom eventn:归入19 ;
+    nsn:fid "nsfid_35" .
+
+nsn:静安区的东部 nsn:changefrom eventn:入10 ;
+    nsn:fid "nsfid_18" .
+
+nsn:静安区的西部 nsn:changefrom eventn:入11 ;
+    nsn:fid "nsfid_20" .
+
+<http://geocode.org/NS/高桥、洋泾、杨思3区> nsn:changefrom eventn:合并为14 ;
+    nsn:fid "nsfid_26" .
+
+nsn:黄浦区与南市区 nsn:changefrom eventn:合并为27 ;
+    nsn:fid "nsfid_47" .
+
+nsn:黄浦区与卢湾区 nsn:changefrom eventn:合并为29 ;
+    nsn:fid "nsfid_49" .
+
+eventn:入10 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_10" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:新成区 .
+
+eventn:入11 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_11" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:长宁区 .
+
+eventn:入12 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_12" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:邑庙区 .
+
+eventn:入13 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_13" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:卢湾区 .
+
+eventn:入6 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_6" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:黄浦区 .
+
+eventn:入7 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_7" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:虹口区 .
+
+eventn:入8 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_8" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:闸北区 .
+
+eventn:入9 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_9" ;
+    eventn:fname "入" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:徐汇区 .
+
+eventn:分为4 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_4" ;
+    eventn:fname "分为" ;
+    eventn:ftime "1952年" ;
+    nsn:changeto <http://geocode.org/NS/东昌、洋泾2区> .
+
+eventn:划入21 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_21" ;
+    eventn:fname "划入" ;
+    eventn:ftime "1961年" ;
+    nsn:changeto nsn:上海市 .
+
+eventn:合并为14 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_14" ;
+    eventn:fname "合并为" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:东郊区 .
+
+eventn:合并为15 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_15" ;
+    eventn:fname "合并为" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:北郊区 .
+
+eventn:合并为16 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_16" ;
+    eventn:fname "合并为" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:西郊区 .
+
+eventn:合并为27 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_27" ;
+    eventn:fname "合并为" ;
+    eventn:ftime "2000年" ;
+    nsn:changeto nsn:黄浦区 .
+
+eventn:合并为29 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_29" ;
+    eventn:fname "合并为" ;
+    eventn:ftime "2011年" ;
+    nsn:changeto nsn:黄浦区 .
+
+eventn:合并为5 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_5" ;
+    eventn:fname "合并为" ;
+    eventn:ftime "1952年" ;
+    nsn:changeto nsn:江湾区 .
+
+eventn:复归22 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_22" ;
+    eventn:fname "复归" ;
+    eventn:ftime "1962年" ;
+    nsn:changeto nsn:浙江省 .
+
+eventn:废17 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_17" ;
+    eventn:fname "废" ;
+    eventn:ftime "1956年" ;
+    nsn:changeto nsn:水上区 .
+
+eventn:归入19 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_19" ;
+    eventn:fname "归入" ;
+    eventn:ftime "1958年11月" ;
+    nsn:changeto nsn:上海市 .
+
+eventn:归入20 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_20" ;
+    eventn:fname "归入" ;
+    eventn:ftime "1958年11月" ;
+    nsn:changeto nsn:上海市 .
+
+eventn:成立于0 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_0" ;
+    eventn:fname "成立于" ;
+    eventn:ftime "1927年" ;
+    nsn:changeto nsn:1927年 .
+
+eventn:成立于1 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_1" ;
+    eventn:fname "成立于" ;
+    eventn:ftime "1949年5月1日" ;
+    nsn:changeto nsn:1949年5月1日 .
+
+eventn:撤消-并入28 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_28" ;
+    eventn:fname "撤消-并入" ;
+    eventn:ftime "2009年" ;
+    nsn:changeto nsn:浦东新区 .
+
+eventn:撤消-设立23 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_23" ;
+    eventn:fname "撤消-设立" ;
+    eventn:ftime "1988年" ;
+    nsn:changeto nsn:宝山区 .
+
+eventn:撤消-设立24 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_24" ;
+    eventn:fname "撤消-设立" ;
+    eventn:ftime "1992年" ;
+    nsn:changeto nsn:新的闵行区 .
+
+eventn:撤消-设立25 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_25" ;
+    eventn:fname "撤消-设立" ;
+    eventn:ftime "1992年" ;
+    nsn:changeto nsn:浦东新区 .
+
+eventn:撤消-设立26 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_26" ;
+    eventn:fname "撤消-设立" ;
+    eventn:ftime "1992年" ;
+    nsn:changeto nsn:嘉定区 .
+
+eventn:改属18 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_18" ;
+    eventn:fname "改属" ;
+    eventn:ftime "1958年1月" ;
+    nsn:changeto nsn:上海市 .
+
+eventn:辖2 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_2" ;
+    eventn:fname "辖" ;
+    eventn:ftime "1949年" ;
+    nsn:changeto <http://geocode.org/NS/黄浦、老闸、邑庙、蓬莱、嵩山、卢湾、常熟、徐汇、长宁、普陀、闸北、静安、新成、江宁、北站、虹口、北四川路、提篮桥、榆林、杨浦20市区> .
+
+eventn:辖3 eventn:dynasty dynastyn:中华人民共和国 ;
+    eventn:fid "eventid_3" ;
+    eventn:fname "辖" ;
+    eventn:ftime "1949年" ;
+    nsn:changeto <http://geocode.org/NS/新市、江湾、吴淞、大场、新泾、龙华、杨思、洋泾、高桥、真如10个郊区> .
+
+nsn:1927年 nsn:fid "nsfid_1" .
+
+nsn:1949年5月1日 nsn:fid "nsfid_3" .
+
+<http://geocode.org/NS/东昌、洋泾2区> nsn:fid "nsfid_7" .
+
+nsn:东郊区 nsn:fid "nsfid_27" .
+
+nsn:北郊区 nsn:fid "nsfid_29" .
+
+nsn:卢湾区 nsn:fid "nsfid_25" .
+
+nsn:嘉定区 nsn:fid "nsfid_46" .
+
+nsn:宝山区 nsn:fid "nsfid_40" .
+
+nsn:徐汇区 nsn:fid "nsfid_17" .
+
+<http://geocode.org/NS/新市、江湾、吴淞、大场、新泾、龙华、杨思、洋泾、高桥、真如10个郊区> nsn:fid "nsfid_5" .
+
+nsn:新成区 nsn:fid "nsfid_19" .
+
+nsn:新的闵行区 nsn:fid "nsfid_42" .
+
+nsn:水上区 nsn:fid "nsfid_32" .
+
+nsn:江湾区 nsn:fid "nsfid_9" .
+
+nsn:浙江省 nsn:fid "nsfid_38" .
+
+nsn:虹口区 nsn:fid "nsfid_13" .
+
+nsn:西郊区 nsn:fid "nsfid_31" .
+
+nsn:邑庙区 nsn:fid "nsfid_23" .
+
+nsn:长宁区 nsn:fid "nsfid_21" .
+
+nsn:闸北区 nsn:fid "nsfid_15" .
+
+<http://geocode.org/NS/黄浦、老闸、邑庙、蓬莱、嵩山、卢湾、常熟、徐汇、长宁、普陀、闸北、静安、新成、江宁、北站、虹口、北四川路、提篮桥、榆林、杨浦20市区> nsn:fid "nsfid_4" .
+
+nsn:浦东新区 nsn:fid "nsfid_44" .
+
+nsn:黄浦区 nsn:fid "nsfid_11" .
+
+nsn:上海市 nsn:fid "nsfid_34" .
+
+dynastyn:中华人民共和国 dynastyn:fid "dynfid_0" .
+
