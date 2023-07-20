@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="天地图" />
+		<title>天地图－地图API－范例－地图拾取器</title>
+		<style type="text/css">
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+
+			#map1_container,
+			#map2_container {
+				width: 70%;
+				height: 50%;
+				float: left;
+				overflow: hidden;
+				margin: 0;
+			}
+		</style>
+
+		<script type="text/javascript" src="http://api.tianditu.gov.cn/api?v=4.0&tk=eb810202b6ab9b263b4d5ac47fe772ab">
+		</script>
+		<script>
+			var map, map2;
+			var pickup;
+			var pickup2;
+			var zoom = 16;
+
+			function onLoad() {
+				map = new T.Map('map1_container');
+				map.centerAndZoom(new T.LngLat(112.94323,34.91032), zoom);
+
+				var imageURL =
+					'http://t0.tianditu.gov.cn/img_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=img&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&tk=eb810202b6ab9b263b4d5ac47fe772ab';
+				//创建自定义图层对象
+				var lay = new T.TileLayer(imageURL, {
+					minZoom: 1,
+					maxZoom: 18
+				});
+				map2 = new T.Map('map2_container', {
+					layers: [lay]
+				});
+				map2.centerAndZoom(new T.LngLat(112.94323,34.91032), zoom);
+				
+				function syncMap1ToMap2() {
+				    const center = map.getCenter();
+				    const zoom = map.getZoom();
+				    map2.centerAndZoom(new T.LngLat(center.lng, center.lat), zoom);
+				  }
+
+				function syncMap2ToMap1() {
+					const center = map2.getCenter();
+					const zoom = map2.getZoom();
+					map.centerAndZoom(new T.LngLat(center.lng, center.lat), zoom);
+				  }
+				  
+				map.addEventListener("moveend", syncMap1ToMap2);
+				map.addEventListener("zoomend", syncMap1ToMap2);
+				map2.on("moveend", syncMap2ToMap1);
+				map2.on("zoomend", syncMap2ToMap1);
+				  
+				var config = {
+					callback: getLngLat
+				};
+				var config2 = {
+					callback: getLngLat2
+				};
+
+				pickup = new T.CoordinatePickup(map, config);
+				pickup.addEvent();
+				pickup2 = new T.CoordinatePickup(map2, config2);
+				pickup2.addEvent();
+			}
+			function getLngLat(lnglat) {
+				document.getElementById("lnglatStr").value = lnglat.getLng() + "," + lnglat.getLat();
+			}
+			function getLngLat2(lnglat) {
+				document.getElementById("lnglatStr2").value = lnglat.getLng() + "," + lnglat.getLat();
+			}
+		</script>
+	</head>
+	<body onLoad="onLoad()">
+		<div id="map1_container"></div>
+		<div id="map2_container"></div>
+		<div id="ss">
+			上面的图和下面的图可以联动（移动、缩放）<br />
+			用鼠标在地图上点选获得地理坐标<br /><br />
+			点击上面的图获取的坐标<br />
+			<input type="text" id="lnglatStr" value="" /><br /><br />
+			点击下面的图获取的坐标<br />
+			<input type="text" id="lnglatStr2" value="" />
+		</div>
+	</body>
+
+</html>
